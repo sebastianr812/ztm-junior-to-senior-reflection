@@ -35,4 +35,10 @@ Today is 12-19-2022 and I have completed the ZTM junior to senior course by Andr
 
 10. Reddis - reddis is a memory based database that is very fast and most useful for storing data that is not that important meaning we can afford to lose it and being able to retrieve it quickly. In our case we used reddis to store the JWT token of a user and whenever we wanted to authenticate the user, we would look it up inside of the reddis database. 
 
+11. Sessions + JWT - sessions can be handled by either cookies or JWT tokens. Cookies are sent from the server and they are stateful, meaning we need to keep a record of the cookie both in the server and in the browser. JWT tokens work by creating it in the server, sending it to the browser and the token itself contains everything necessary to validate the token. In our personal project we combined aspects of both of these methods: we generated the JWT token and stored it in a reddis database, when we needed authentication for a user we just checked the database and if we got a response that matched the user's id for the token then we could proceed. On the browser, the jwt token is stored in session memory. We also learned how to use the authentication to protect some of our endpoints so that only authenticated users are allowed to use them.
+
+12. AWS - aws is a platform as a service, amazon provides many web services that we can use for a fee like: EC2 - machine that we can put our code on, physical server , s3 (objects on the cloud), lambda (function on the cloud), cloudfront (amazon cdn service), dynamo db (nosql cloud database). We use tools like serverless so that we can use the terminal to interact with different aws or other webservices. These can be used to massively scale up our app / make dev lives easier becuase amazon will handle setting everything up and we can just rent the service to use it.
+
+13. Performance part 3
+
 
